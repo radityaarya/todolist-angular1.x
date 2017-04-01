@@ -3,7 +3,12 @@ body {
 }
 
 #title {
-  margin: 1em; 
+  margin: 1em;
+}
+
+#title-link {
+  text-decoration: none;
+  color: rgba(255, 0, 0, 0.44)
 }
 
 #footer {
