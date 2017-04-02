@@ -26,7 +26,7 @@
                     </li>
                     <li class="list-group-item todolist" ng-repeat="data in dataList | ReverseOrder">
                         <div class="col-md-11">
-                            {{ data.subject }}
+                            {{ ::data.subject }}
                         </div>
                         <div class="col-md-1">
                             <i class="material-icons delete-icons" ng-click="remove(data)">clear</i>
