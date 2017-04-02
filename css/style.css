@@ -17,16 +17,11 @@ body {
 }
 
 .delete-icons {
-    color: rgba(172, 172, 172, 0.3);
+    color: rgba(172, 172, 172, 0);
     cursor:pointer;
 }
 
-.delete-icons:hover {
-    color: rgba(255, 0, 0, 0.44);
-    font-weight: bold;
-}
-
-.delete-icons:active {
-    color: rgba(255, 0, 0, 0.75);
-    font-weight: bold;
+.todolist:hover .delete-icons {
+    color: rgba(172, 172, 172, 0.6);
+    cursor:pointer;
 }

@@ -10,7 +10,7 @@ app.controller('MainController', function($scope) {
 
             existingData === null ? existingData = [] : JSON.parse(localStorage.getItem("todolist"))
 
-            existingData.push({index: existingData.length + 1 , subject: $scope.addForm})
+            existingData.push({subject: $scope.addForm})
             localStorage.setItem("todolist", JSON.stringify(existingData))
 
             $scope.dataList = JSON.parse(localStorage.getItem("todolist"))
