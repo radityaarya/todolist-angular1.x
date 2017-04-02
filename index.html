@@ -20,9 +20,10 @@
             <div class="card" ng-controller="MainController">
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item">
-                      <input type="text" ng-model="search" placeholder="search here .." />
+                      <input type="text" ng-model="addForm" ng-keyup="$event.keyCode == 13 ? addNew() : null" placeholder="Add new .." />
+                      <!-- <button type="button" ng-click="addNew()">add</button> -->
                     </li>
-                    <li class="list-group-item" ng-repeat="data in dataList | filter:search">{{ data.name }}</li>
+                    <li class="list-group-item" ng-repeat="data in dataList">{{ data.subject }}</li>
                 </ul>
             </div>
 

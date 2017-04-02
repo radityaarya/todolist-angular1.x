@@ -1,9 +1,17 @@
 app.controller('MainController', function($scope) {
-    $scope.dataList = [
-      {name:'tes one'},
-      {name:'tes two'},
-      {name:'tes three'},
-      {name:'tes four'},
-      {name:'tes five'},
-    ]
+    $scope.dataList = JSON.parse(localStorage.getItem("todolist")),
+
+    $scope.addNew = function() {
+        if ($scope.addForm !== '') {
+            var existingData = JSON.parse(localStorage.getItem("todolist"))
+
+            existingData === null ? existingData = [] : JSON.parse(localStorage.getItem("todolist"))
+
+            existingData.push({subject: $scope.addForm})
+            localStorage.setItem("todolist", JSON.stringify(existingData))
+
+            $scope.dataList = JSON.parse(localStorage.getItem("todolist"))
+            $scope.addForm = ''
+        }
+    }
 })
