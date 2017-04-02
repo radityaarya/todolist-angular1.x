@@ -24,9 +24,13 @@
                     <li class="list-group-item">
                       <input type="text" ng-model="addForm" ng-keyup="$event.keyCode == 13 ? addNew() : null" placeholder="Add new .." />
                     </li>
-                    <li class="list-group-item" ng-repeat="data in dataList | ReverseOrder">
-                        {{ data.subject }}
-                        <i class="material-icons">clear</i>
+                    <li class="list-group-item todolist" ng-repeat="data in dataList | ReverseOrder">
+                        <div class="col-md-11">
+                            {{ data.subject }}
+                        </div>
+                        <div class="col-md-1">
+                            <i class="material-icons delete-icons" ng-click="remove(data)">clear</i>
+                        </div>
                     </li>
                 </ul>
             </div>

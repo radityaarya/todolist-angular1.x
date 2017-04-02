@@ -3,15 +3,30 @@ body {
 }
 
 #title {
-  margin: 1em;
+    margin: 1em;
 }
 
 #title-link {
-  text-decoration: none;
-  color: rgba(255, 0, 0, 0.44)
+    text-decoration: none;
+    color: rgba(255, 0, 0, 0.44);
 }
 
 #footer {
-  margin-top: 5em;
-  align-self: flex-end;
+    margin-top: 5em;
+    align-self: flex-end;
+}
+
+.delete-icons {
+    color: rgba(172, 172, 172, 0.3);
+    cursor:pointer;
+}
+
+.delete-icons:hover {
+    color: rgba(255, 0, 0, 0.44);
+    font-weight: bold;
+}
+
+.delete-icons:active {
+    color: rgba(255, 0, 0, 0.75);
+    font-weight: bold;
 }
