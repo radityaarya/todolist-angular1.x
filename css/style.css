@@ -9,6 +9,7 @@ body {
 #title-link {
     text-decoration: none;
     color: rgba(255, 0, 0, 0.44);
+    font-size: 1.5em;
 }
 
 #footer {
@@ -19,6 +20,17 @@ body {
 .delete-icons {
     color: rgba(172, 172, 172, 0);
     cursor:pointer;
+    margin-left: 4.25em;
+}
+
+@media screen and (max-width: 720px){
+  .delete-icons {
+      margin-left: 1.5em;
+  }
+}
+
+.todolist-entry {
+  font-size: 1.5em;
 }
 
 .todolist:hover .delete-icons {
